@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: rgba(42, 24, 24, 0.267);
+        color: white;
+        width: 7rem;
+        height: 3rem;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        margin: 1rem;
+      }
+
+      button:hover {
+        background-color: rgb(116, 37, 37);
+        transition: 2s;
+        color: rgb(139, 190, 240);
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+      }
+
+      .clase {
+        display: flex;
+        justify-content: center;
+      }
+
+      p {
+        text-align: center;
+        color: rgb(129, 11, 11);
+      }
+
+      body {
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+
+
+  
+  <body>
+    <!---------JUEGO PAPEL PIEDRA TIJERA--------->
+
+    <h2>Juego: Piedra Papel y Tijera</h2>
+
+    <div class="clase">
+      <button
+        onclick=" 
+    const ramdonMat = Math.random();
+
+    let computerMove = '';
+
+    if (ramdonMat >= 0 && ramdonMat<= 1/3 ){
+    computerMove  =   'Piedra';
+
+    }else if(ramdonMat >= 1/3 && ramdonMat <= 2/3 )  {
+      computerMove = 'Papel';
+    }
+    else if(ramdonMat >= 2/3 && ramdonMat <= 1 ){
+    computerMove = 'Tijera';
+}
+
+
+
+    let result = ''
+
+
+    if(computerMove === 'Piedra' ){
+    result = 'pierde';
+    } else if (computerMove === 'Papel'  ) {
+    result = 'Tu pierdes';
+    } else if(computerMove === 'Tijera' ){
+    result = 'Tu ganas';
+    }
+
+    alert(`Escojiste Piedra ------>  ${computerMove} . ${result} `);
+
+
+"
+      >
+        Piedra
+      </button>
+
+      <button
+        onclick="
+     const randonMat = Math.random();
+
+let   conputerMove  =   '';
+
+     if ( randonMat >= 0 && randonMat <= 1/3 ) {
+      conputerMove  =   'Piedra';
+     }else if( randonMat >= 1/3 && randonMat <= 2/3) {
+      conputerMove  =   'Papel';
+     }else if(randonMat >= 2/3 && randonMat <= 0){
+      conputerMove  =   'Tijera';
+     }
+      
+let resultado = '';
+
+     if (conputerMove === 'Papel' ) {
+       resultado = 'Tu ganas'
+     }else if( conputerMove === 'Tijera'){
+ resultado = 'Tu pierdes'
+     }else if(conputerMove === 'Piedra') {
+resultado = 'Pierdes'
+     };
+
+  alert(`Escojiste Papel ------> ${conputerMove} . ${resultado} `)
+
+      "
+      >
+        Papel
+      </button>
+
+      <button
+        onclick="
+      const matramder = Math.random();
+
+      let coimputer = '';
+     
+      if (matramder >= 0 && matramder<= 1/3) {
+        coimputer = 'Piedra'
+      }else if(matramder >= 1/3 && matramder <= 2/3){
+coimputer = 'Papel'
+
+      }else if(matramder >= 2/3 && matramder <= 0){
+coimputer = 'Tijera'
+      }
+
+let resul = '';
+
+     if (  coimputer === 'Tijera') {
+      resul = 'tu Pierdes'
+     } if ( coimputer == 'Piedra') {
+      resul = 'Tu Ganas'
+     } else if( coimputer === 'Papel') {
+      resul = 'Pierdes'
+     }
+
+alert(`Escojiste Tijera ------> ${coimputer} . ${resul} `);
+
+
+      "
+      >
+        Tijera
+      </button>
+    </div>
+
+    <p><a href="#">Click Here</a> Un pequeño juego de acertijos</p>
+    <!---------Script-->
+
+    <script></script>
+  </body>
+</html>
