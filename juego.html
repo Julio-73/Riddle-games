@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Sriracha&family=Ultra&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       button {
         background-color: rgba(42, 24, 24, 0.267);
@@ -12,11 +17,11 @@
         width: 7rem;
         height: 3rem;
         border-radius: 3rem;
-        font-size: 1.5rem;
-        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 1.3rem;
+        border: solid black 2px;
         cursor: pointer;
         margin: 1rem;
+        font-family: "Ultra", serif;
       }
 
       button:hover {
@@ -27,8 +32,9 @@
 
       h2 {
         text-align: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3rem;
         font-weight: 900;
+        font-family: "Cabin Sketch", cursive;
       }
 
       .clase {
@@ -38,25 +44,95 @@
 
       p {
         text-align: center;
-        color: rgb(129, 11, 11);
+        color: rgb(5, 4, 4);
       }
 
       body {
-        background-color: antiquewhite;
+        background-color: rgb(99, 85, 64);
+      }
+      h1 {
+        text-align: center;
+        font-weight: 300;
+        font-family: "Ultra", serif;
+        font-size: 5rem;
+      }
+
+      p {
+        position: relative;
+        top: 5rem;
+      }
+
+      form {
+        border: solid rgb(69, 68, 57) 1px;
+        width: 600px;
+        height: 460px;
+        background-color: rgb(206, 170, 122);
+        box-shadow: 4px 4px 4px 5px;
+        position: relative;
+        top: 3rem;
+      }
+      .game {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Punto de Quiebre */
+
+      @media screen and (min-width: 358px) {
+        form {
+          border: solid rgb(37, 145, 30) 1px;
+          width: 350px;
+          height: 430px;
+          background-color: rgb(206, 170, 122);
+          box-shadow: 2px 4px 5px 4px;
+        }
+
+        h1 {
+          text-align: center;
+          font-weight: 300;
+          font-family: "Ultra", serif;
+          font-size: 2.5rem;
+        }
+
+        button {
+          background-color: rgba(42, 24, 24, 0.267);
+          color: white;
+          width: 7rem;
+          height: 3rem;
+          border-radius: 2rem;
+          font-size: 1.2rem;
+          border: solid 1px rgb(118, 118, 91);
+          cursor: pointer;
+          margin: 1rem;
+          font-family: "Ultra", serif;
+        }
+        button:hover {
+          background-color: rgb(116, 37, 37);
+          transition: 2s;
+          color: rgb(21, 26, 30);
+        }
+
+        p {
+          position: relative;
+          top: 5rem;
+          text-justify: distribute;
+        }
       }
     </style>
   </head>
 
-
-  
   <body>
     <!---------JUEGO PAPEL PIEDRA TIJERA--------->
 
-    <h2>Juego: Piedra Papel y Tijera</h2>
+    <div class="game">
+      <form action="">
+        <h1>Juego :</h1>
 
-    <div class="clase">
-      <button
-        onclick=" 
+        <h2>Piedra Papel y Tijera</h2>
+
+        <div class="clase">
+          <button
+            onclick=" 
     const ramdonMat = Math.random();
 
     let computerMove = '';
@@ -88,12 +164,12 @@
 
 
 "
-      >
-        Piedra
-      </button>
+          >
+            Piedra
+          </button>
 
-      <button
-        onclick="
+          <button
+            onclick="
      const randonMat = Math.random();
 
 let   conputerMove  =   '';
@@ -119,12 +195,12 @@ resultado = 'Pierdes'
   alert(`Escojiste Papel ------> ${conputerMove} . ${resultado} `)
 
       "
-      >
-        Papel
-      </button>
+          >
+            Papel
+          </button>
 
-      <button
-        onclick="
+          <button
+            onclick="
       const matramder = Math.random();
 
       let coimputer = '';
@@ -152,12 +228,14 @@ alert(`Escojiste Tijera ------> ${coimputer} . ${resul} `);
 
 
       "
-      >
-        Tijera
-      </button>
-    </div>
+          >
+            Tijera
+          </button>
+        </div>
 
-    <p><a href="#">Click Here</a> Un pequeño juego de acertijos</p>
+        <p>Un pequeño juego de acertijos</p>
+      </form>
+    </div>
     <!---------Script-->
 
     <script></script>
